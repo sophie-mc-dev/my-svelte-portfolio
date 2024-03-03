@@ -28,13 +28,10 @@ This is my personal portfolio website built using Svelte. It showcases my projec
    docker build -t my-svelte-portfolio .
    ```
 6. Run the Docker container:
-    ```bash
-
-    ```
-7. Open your web browser and navigate to "" to view the website.
     ```
     docker run -p 3000:3000 --name my-svelte-container my-svelte-portfolio
     ```
+7. Open your web browser and navigate to http://localhost:3000 to view the website.
 
 ## Technologies Used
 
