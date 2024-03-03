@@ -1,53 +1,33 @@
 <script>
-	import Header from './Header.svelte';
-	import './styles.css';
+  import "../app.css";
+  import Footer from "../components/Footer.svelte";
+  import Header from "../components/Header.svelte";
+
+  let y;
+  let innerHeight = 0;
+  let innerWidth = 0;
+
+  function goTop() {
+    document.body.scrollIntoView();
+  }
 </script>
 
-<div class="app">
-	<Header />
-
-	<main>
-		<slot />
-	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+<div
+  class="relative flex flex-col max-w-[1400xp] mx-auto w-full text-sm sm:text-base min-h-screen"
+>
+  <div
+    class={"fixed bottom-0 w-full duration-200 flex p-10 z-[10]" +
+      (y > 0
+        ? "opacity-full pointer-events-auto"
+        : "pointer-events-none opacity-0")}
+  >
+    <button>
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+  <Header />
+  <slot />
+  <Footer />
 </div>
 
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
+<svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
