@@ -18,7 +18,7 @@
   <div class="menu-line"></div>
   <div class="menu-icons">
     {#each icons as icon}
-      <a target="_blank" href={icon.href} class="menu-icon">
+      <a href={icon.href} class="menu-icon">
         <svelte:component this={icon.component} />
       </a>
     {/each}

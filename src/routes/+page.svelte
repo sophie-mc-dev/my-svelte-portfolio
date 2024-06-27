@@ -1,9 +1,11 @@
 <script>
-  import Header from "../components/Header.svelte";
-  import Main from "../components/Main.svelte";
-  import Footer from "../components/Footer.svelte";
+  import TopMenu from "../lib/components/TopMenu.svelte";
+  import BottomMenu from "../lib/components/BottomMenu.svelte";
+  import Main from "../lib/components/Main.svelte";
+  import Footer from "../lib/components/Footer.svelte";
 </script>
 
-<Header />
+<TopMenu />
+<BottomMenu />
 <Main />
 <Footer />

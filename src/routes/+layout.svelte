@@ -1,7 +1,6 @@
 <script>
   import "../app.css";
-  import Footer from "../components/Footer.svelte";
-  import Header from "../components/Header.svelte";
+  import Footer from "../lib/components/Footer.svelte";
 
   let y;
   let innerHeight = 0;
@@ -25,7 +24,6 @@
       <i class="fa-solid fa-arrow-up"></i>
     </button>
   </div>
-  <Header />
   <slot />
   <Footer />
 </div>

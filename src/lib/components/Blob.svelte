@@ -20,7 +20,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url("../lib/images/pfp.JPEG");
+    background-image: url("../images/pfp.jpeg");
     background-size: cover;
   }
 
@@ -39,14 +39,14 @@
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
-      border-color: #003b68;
+      border-color: #141c2b;
     }
     50% {
-      border-color: #4987f2;
+      border-color: #ff0000;
     }
     100% {
       transform: rotate(360deg);
-      border-color: #003b68;
+      border-color: #141c2b;
     }
   }
 </style>
