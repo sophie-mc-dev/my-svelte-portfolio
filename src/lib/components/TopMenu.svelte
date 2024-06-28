@@ -2,15 +2,15 @@
   import MaterialSymbolsHome from "~icons/material-symbols/home";
   import MdiUser from '~icons/mdi/user';
   import TablerCode from '~icons/tabler/code';
-  import MdiBriefcase from '~icons/mdi/briefcase';
   import IcBaselineEmail from '~icons/ic/baseline-email';
+  import ClarityLightbulbSolid from '~icons/clarity/lightbulb-solid';
 
   export let icons = [
-    { href: "#home", component: MaterialSymbolsHome },
-    { href: "#aboutme", component: MdiUser },
-    { href: "#projects", component: TablerCode },
-    { href: "#experience", component: MdiBriefcase },
-    { href: "#contactme", component: IcBaselineEmail },
+    { href: "#home", component: MaterialSymbolsHome, title: "Home" },
+    { href: "#aboutme", component: MdiUser, title: "About Me" },
+    { href: "#skills", component: ClarityLightbulbSolid, title: "Skills" },
+    { href: "#projects", component: TablerCode, title: "Projects" },
+    { href: "#contactme", component: IcBaselineEmail, title: "Contact Me" },
   ];
 </script>
 
@@ -18,7 +18,7 @@
   <div class="menu-line"></div>
   <div class="menu-icons">
     {#each icons as icon}
-      <a href={icon.href} class="menu-icon">
+      <a href={icon.href} class="menu-icon" title={icon.title}>
         <svelte:component this={icon.component} />
       </a>
     {/each}

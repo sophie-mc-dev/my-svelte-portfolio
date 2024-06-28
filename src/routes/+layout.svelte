@@ -4,10 +4,6 @@
   let y;
   let innerHeight = 0;
   let innerWidth = 0;
-
-  function goTop() {
-    document.body.scrollIntoView();
-  }
 </script>
 
 <div
@@ -19,9 +15,6 @@
         ? "opacity-full pointer-events-auto"
         : "pointer-events-none opacity-0")}
   >
-    <button>
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
   </div>
   <slot />
 </div>
