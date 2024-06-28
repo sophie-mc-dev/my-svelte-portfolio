@@ -4,7 +4,7 @@
   .blob {
     width: 300px;
     height: 300px;
-    margin: 10% auto;
+    /* margin: 10% auto; */
     position: relative;
     color: #fff;
     display: flex;

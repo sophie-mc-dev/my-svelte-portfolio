@@ -1,6 +1,5 @@
 <script>
   import "../app.css";
-  import Footer from "../lib/components/Footer.svelte";
 
   let y;
   let innerHeight = 0;
@@ -25,7 +24,6 @@
     </button>
   </div>
   <slot />
-  <Footer />
 </div>
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
