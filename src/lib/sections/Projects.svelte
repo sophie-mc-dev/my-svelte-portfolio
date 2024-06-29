@@ -3,7 +3,10 @@
 
 <section id="projects" class="projects-section">
   <h1>My Projects</h1>
-  <div class="projects-content"></div>
+  <div class="projects-content">
+
+  </div>
+  
 </section>
 
 <style>
@@ -26,11 +29,5 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-  }
-  p {
-    max-width: 500px;
-    text-align: left;
-    font-size: 16px;
-    line-height: 3em;
   }
 </style>

@@ -1,9 +1,15 @@
 <script>
+  import SkillsCard from "../components/SkillsCard.svelte";
+  import { skills } from '../data/skillsData.js';
 </script>
 
 <section id="skills" class="skills-section">
   <h1>My Skills</h1>
-  <div class="skills-content"></div>
+  <div class="skills-content">
+    {#each skills as { icon, title, description, designation }}
+      <SkillsCard {icon} {title} {description} {designation} />
+    {/each}
+  </div>
 </section>
 
 <style>
@@ -15,6 +21,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    height: 100vh;
   }
   h1 {
     font-size: 36px;
@@ -22,15 +29,9 @@
   }
   .skills-content {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; 
     gap: 50px;
-  }
-  p {
-    max-width: 500px;
-    text-align: left;
-    font-size: 16px;
-    line-height: 3em;
   }
 </style>

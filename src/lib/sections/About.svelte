@@ -4,15 +4,19 @@
   const images = [
     {
       alt: "I1",
-      src: "src/lib/images/image1.jpg",
+      src: "src/lib/images/image1.jpeg",
     },
     {
       alt: "I2",
-      src: "src/lib/images/image1.jpg",
+      src: "src/lib/images/image2.jpeg",
     },
     {
       alt: "I3",
-      src: "src/lib/images/image1.jpg",
+      src: "src/lib/images/image3.jpeg",
+    },
+    {
+      alt: "I3",
+      src: "src/lib/images/image4.jpeg",
     },
   ];
 
