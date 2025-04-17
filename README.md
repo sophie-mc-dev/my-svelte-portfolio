@@ -1,46 +1,38 @@
-# Personal Svelte Portfolio Website
+# sv
 
-## Overview
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-This is my personal portfolio website built using Svelte. It showcases my projects, skills, and experience as a web developer.
+## Creating a project
 
-## Installation
+If you're seeing this, you've probably already done this step. Congrats!
 
-1. Make sure you have Docker installed on your machine. If not, you can download it from [Docker's official website](https://www.docker.com/get-started).
+```bash
+# create a new project in the current directory
+npx sv create
 
-2. Clone this repository.
-   ```bash
-   git clone https://github.com/sophie-mc-dev/my-svelte-portfolio.git
-   ```
-3. Navigate to the project directory.
-    ```bash
-    cd my-svelte-portfolio
-    ```
-4. Install dependencies using npm or yarn:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+# create a new project in my-app
+npx sv create my-app
+```
 
-5. Build the Docker image.
-   ```bash
-   docker build -t my-svelte-portfolio .
-   ```
-6. Run the Docker container:
-    ```
-    docker run -p 3000:3000 --name my-svelte-container my-svelte-portfolio
-    ```
-7. Open your web browser and navigate to http://localhost:3000 to view the website.
+## Developing
 
-## Technologies Used
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-- Svelte
-- HTML/CSS/JavaScript
+```bash
+npm run dev
 
-## Screenshots or Demos
-- ...
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-## Known Issues
+## Building
 
-- [List any known issues or limitations]
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

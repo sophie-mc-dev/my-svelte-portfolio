@@ -27,10 +27,4 @@
     align-items: center;
     gap: 50px;
   }
-  p {
-    max-width: 500px;
-    text-align: left;
-    font-size: 16px;
-    line-height: 3em;
-  }
 </style>

@@ -1,7 +1,7 @@
 <script>
   import "../app.css";
 
-  let y;
+  let y = 0;
   let innerHeight = 0;
   let innerWidth = 0;
 </script>
@@ -14,8 +14,7 @@
       (y > 0
         ? "opacity-full pointer-events-auto"
         : "pointer-events-none opacity-0")}
-  >
-  </div>
+  ></div>
   <slot />
 </div>
 
