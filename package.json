@@ -14,6 +14,7 @@
 		"@iconify/json": "^2.2.222",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-cloudflare": "^7.0.1",
 		"@sveltejs/adapter-node": "^4.0.1",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.0.0",
@@ -34,5 +35,6 @@
 	"dependencies": {
 		"@popperjs/core": "^2.11.8",
 		"tailwind-merge": "^2.3.0"
-	}
+	},
+	"packageManager": "pnpm@9.0.6+sha1.648f6014eb363abb36618f2ba59282a9eeb3e879"
 }
