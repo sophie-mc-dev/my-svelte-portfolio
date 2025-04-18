@@ -1,22 +1,26 @@
 <script>
   import { Carousel, Thumbnails } from "flowbite-svelte";
+  import image1 from "../images/image1.jpeg"
+  import image2 from "../images/image1.jpeg"
+  import image3 from "../images/image1.jpeg"
+  import image4 from "../images/image1.jpeg"
 
   const images = [
     {
       alt: "I1",
-      src: "src/lib/images/image1.jpeg",
+      src: image1,
     },
     {
       alt: "I2",
-      src: "src/lib/images/image2.jpeg",
+      src: image2
     },
     {
       alt: "I3",
-      src: "src/lib/images/image3.jpeg",
+      src: image3,
     },
     {
       alt: "I3",
-      src: "src/lib/images/image4.jpeg",
+      src: image4,
     },
   ];
 

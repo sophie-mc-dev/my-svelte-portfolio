@@ -20,7 +20,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url("../images/pfp.jpeg");
+    background-image: url("/assets/pfp.jpeg");
     background-size: cover;
   }
 
