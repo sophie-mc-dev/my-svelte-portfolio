@@ -20,6 +20,7 @@
     text-align: left;
     height: 100vh;
     width: 100%;
+    padding: 20px;
   }
 
   .introduction {
@@ -57,5 +58,34 @@
     background-color: #dd1212;
     color: white;
     transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column-reverse;
+      text-align: center;
+      height: auto;
+      padding: 40px 20px;
+      margin-top: 80px;
+    }
+
+    .introduction {
+      align-items: center;
+      margin-right: 0;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
   }
 </style>

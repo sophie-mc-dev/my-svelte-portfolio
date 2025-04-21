@@ -1,26 +1,30 @@
 <script>
   import { Carousel, Thumbnails } from "flowbite-svelte";
-  import image1 from "../images/image1.jpeg"
-  import image2 from "../images/image1.jpeg"
-  import image3 from "../images/image1.jpeg"
-  import image4 from "../images/image1.jpeg"
+  import image1 from "../images/image1.jpeg";
+  import image2 from "../images/image2.jpeg";
+  import image3 from "../images/image3.jpeg";
+  import image4 from "../images/image4.jpeg";
 
   const images = [
     {
-      alt: "I1",
+      alt: "Image 1 description",
       src: image1,
+      style: "object-fit: cover; width: 100%; height: 100%;"
     },
     {
-      alt: "I2",
-      src: image2
+      alt: "Image 2 description",
+      src: image2,
+      style: "object-fit: cover; width: 100%; height: 100%;"
     },
     {
-      alt: "I3",
+      alt: "Image 3 description",
       src: image3,
+      style: "object-fit: cover; width: 100%; height: 100%;"
     },
     {
-      alt: "I3",
+      alt: "Image 4 description",
       src: image4,
+      style: "object-fit: cover; width: 100%; height: 100%;"
     },
   ];
 
@@ -32,11 +36,10 @@
   <h1>About Me</h1>
   <div class="about-content">
     <div class="max-w-md space-y-4">
-      <Carousel {images} {forward} let:Indicators let:Controls bind:index>
+      <Carousel {images} {forward} let:Controls bind:index>
         <Controls />
-        <Indicators />
       </Carousel>
-      <Thumbnails style="" {images} {forward} bind:index />
+      <Thumbnails {images} {forward} bind:index />
     </div>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -79,5 +82,22 @@
     text-align: left;
     font-size: 16px;
     line-height: 3em;
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 2em;
+      text-align: center;
+    }
   }
 </style>

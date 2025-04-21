@@ -13,7 +13,7 @@
   <main>
     <TopMenu />
     <BottomMenu />
-    <Darkmode />
+    <!-- <Darkmode /> -->
   
     <div class="content">
       <Home />
@@ -48,5 +48,19 @@
       width: 100%;
       height: 100vh;
     }
+
+    @media (max-width: 768px) {
+  .content {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+  }
+
+  .content > :global(section) {
+    height: auto;
+    padding: 40px 0;
+  }
+}
+
   </style>
   
