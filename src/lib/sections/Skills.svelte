@@ -4,7 +4,7 @@
 </script>
 
 <section id="skills" class="skills-section">
-  <h1>My Skills</h1>
+  <h1>Skill-Set</h1>
   <div class="skills-content">
     {#each skills as { icon, title, description, designation }}
       <SkillsCard {icon} {title} {description} {designation} />

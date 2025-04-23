@@ -1,12 +1,15 @@
 <script>
   import Blob from "../components/Blob.svelte";
+  let cvPath = "/assets/sample.pdf";
 </script>
 
 <section id="home">
   <div class="introduction">
     <h1>Hi 👋 I'm Sofia!</h1>
     <p>I'm a FrontEnd Developer based in Porto.</p>
-    <button class="btn">Download CV</button>
+    <a href={cvPath} on:click={() => window.open(cvPath, '_blank')}>
+      <button class="btn">Download Resumé</button>
+    </a>
   </div>
   <Blob />
 </section>

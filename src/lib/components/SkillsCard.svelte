@@ -3,10 +3,10 @@
   export let icon;
   export let title;
   export let description;
-  export let designation = [];
+  export let designation = "";
 </script>
 
-<Card class="max-w-s h-[300px] bg-gray-800 p-5 rounded-lg text-left card-wrapper flex flex-col justify-between">
+<Card class="max-w-s h-[300px] bg-gray-800 p-5 rounded-lg text-left card-wrapper flex flex-col justify-between transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
   <div>
     {#if icon}
       <svelte:component this={icon} class="w-12 h-12 mb-3 text-white" />
@@ -20,9 +20,10 @@
   </div>
   <div class="flex flex-wrap gap-2">
     {#each designation as skill}
-      <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">
-        {skill}
-      </span>
+    <span class="bg-white/10 text-gray-200 text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm">
+      {skill}
+    </span>
+    
     {/each}
   </div>
 </Card>

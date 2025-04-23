@@ -5,7 +5,9 @@
 
 <Footer class="absolute bottom-0 left-0 z-20 w-full p-4 shadow">
   <div class="flex flex-col items-center justify-center">
-    <img src={logo} alt="Logo" class="h-16 mb-3" />
-    <FooterCopyright href="/" by="Sofia Merino Costa" year={2024} />
+    <a href="#home">
+      <img src={logo} alt="Logo" class="h-16 mb-3" />
+    </a>
+    <FooterCopyright href="https://sophie-mc.dev" by="Sofia Merino Costa." year={new Date().getFullYear()} />
   </div>
 </Footer>
