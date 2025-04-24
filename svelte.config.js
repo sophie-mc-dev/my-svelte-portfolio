@@ -1,10 +1,10 @@
-import adapter from '@sveltejs/adapter-static';
+import cloudflare from "@sveltejs/adapter-cloudflare";
 
-export default {
+/** @type {import('sveltejs/kit').Config} */
+const config = {
   kit: {
-    adapter: adapter(),
-    prerender: {
-      entries: ['*']
-    }
-  }
+    adapter: cloudflare(),
+  },
 };
+
+export default config;
