@@ -6,8 +6,8 @@
 <section id="projects" class="projects-section">
   <h1>My Projects</h1>
   <div class="projects-content">
-    {#each projects as { image, title, techStack, description, githubUrl, liveUrl }}
-    <ProjectsCard {image} {title} {techStack} {description} {githubUrl} {liveUrl} />
+    {#each projects as { image, title, techStack, tags, description, githubUrl, liveUrl }}
+    <ProjectsCard {image} {title} {techStack} {tags} {description} {githubUrl} {liveUrl} />
   {/each}
   </div>
   
@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    height: 100vh;
   }
   h1 {
     font-size: 36px;
@@ -29,9 +30,9 @@
   }
   .projects-content {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; 
     gap: 50px;
   }
 </style>

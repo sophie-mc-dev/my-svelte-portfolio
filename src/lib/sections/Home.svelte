@@ -7,8 +7,8 @@
   <div class="introduction">
     <h1>Hi 👋 I'm Sofia!</h1>
     <p>I'm a FrontEnd Developer based in Porto.</p>
-    <a href={cvPath} on:click={() => window.open(cvPath, '_blank')}>
-      <button class="btn">Download Resumé</button>
+    <a href={""} on:click={() => window.open(cvPath, '_blank')}>
+      <button class="btn">Download CV</button>
     </a>
   </div>
   <Blob />

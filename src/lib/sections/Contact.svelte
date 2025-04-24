@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    height: 100vh;
   }
   h1 {
     font-size: 36px;

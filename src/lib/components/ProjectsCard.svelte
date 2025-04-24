@@ -3,14 +3,15 @@
     export let image: string;
     export let title: string;
     export let techStack: string[] = [];
+    export let tags: string[] = [];
     export let description: string;
     export let githubUrl: string;
     export let liveUrl: string;
   </script>
   
-  <Card class="max-w-s h-[400px] bg-gray-800 p-5 rounded-lg text-left card-wrapper flex flex-col justify-between transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
+  <Card class="max-w-s h-[400px] bg-gray-800 p-0 rounded-lg text-left card-wrapper flex flex-col justify-between transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
     <img src={image} alt="{title} screenshot" class="w-full h-48 object-cover" />
-  
+    
     <div class="flex flex-col gap-3">
       <div class="flex items-center justify-between">
         <h3 class="text-xl font-semibold text-white">{title}</h3>
@@ -28,7 +29,7 @@
               </svg>
             </a>
           {/if}
-  
+    
           {#if liveUrl}
             <a
               href={liveUrl}
@@ -44,9 +45,9 @@
           {/if}
         </div>
       </div>
-  
+    
       <p class="text-sm text-gray-300">{description}</p>
-  
+    
       <div class="flex flex-wrap gap-2 mt-2">
         {#each techStack as tech}
           <span class="bg-white/10 text-gray-200 text-xs px-2 py-1 rounded-full">
@@ -54,6 +55,13 @@
           </span>
         {/each}
       </div>
+      
+      <div class="flex flex-wrap gap-2 mt-2">
+        {#each tags as tag}
+          <span class="bg-white/10 text-gray-200 text-xs px-2 py-1 rounded-md">
+            {tag}
+          </span>
+        {/each}
+      </div>
     </div>
   </Card>
-  
