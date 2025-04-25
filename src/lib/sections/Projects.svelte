@@ -1,20 +1,31 @@
 <script>
-    import ProjectsCard from "../components/ProjectsCard.svelte";
-    import { projects } from '../data/projectsData.js';
+  import ProjectsCard from "../components/ProjectsCard.svelte";
+  import { projects } from "../data/projectsData.js";
 </script>
 
-<section id="projects" class="projects-section">
+<section id="projects">
   <h1>My Projects</h1>
-  <div class="projects-content">
-    {#each projects as { image, title, techStack, tags, description, githubUrl, liveUrl }}
-    <ProjectsCard {image} {title} {techStack} {tags} {description} {githubUrl} {liveUrl} />
-  {/each}
+  <div class="card-wrapper">
+    <div class="projects-content">
+      {#each projects as { image, title, techStack, tags, description, githubUrl, liveUrl }}
+        <ProjectsCard
+          {image}
+          {title}
+          {techStack}
+          {tags}
+          {description}
+          {githubUrl}
+          {liveUrl}
+        />
+      {/each}
+    </div>
   </div>
-  
 </section>
 
 <style>
-  .projects-section {
+  section {
+    min-height: 100vh;
+    box-sizing: border-box;
     padding: 50px 20px;
     text-align: center;
     justify-content: center;
@@ -22,17 +33,24 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    height: 100vh;
+  }
+  .card-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
   }
   h1 {
     font-size: 36px;
     margin-bottom: 40px;
   }
   .projects-content {
-    display: flex;
     flex-wrap: wrap;
+    display: flex;
     justify-content: center;
-    align-items: flex-start; 
-    gap: 50px;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
   }
 </style>

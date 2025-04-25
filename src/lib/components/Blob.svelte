@@ -42,7 +42,7 @@
       border-color: #141c2b;
     }
     50% {
-      border-color: #ff0000;
+      border-color: #d3bd1d;
     }
     100% {
       transform: rotate(360deg);

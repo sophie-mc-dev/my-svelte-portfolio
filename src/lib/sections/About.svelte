@@ -9,22 +9,22 @@
     {
       alt: "Image 1 description",
       src: image1,
-      style: "object-fit: cover; width: 100%; height: 100%;"
+      style: "object-fit: cover; width: 100%; height: 100%;",
     },
     {
       alt: "Image 2 description",
       src: image2,
-      style: "object-fit: cover; width: 100%; height: 100%;"
+      style: "object-fit: cover; width: 100%; height: 100%;",
     },
     {
       alt: "Image 3 description",
       src: image3,
-      style: "object-fit: cover; width: 100%; height: 100%;"
+      style: "object-fit: cover; width: 100%; height: 100%;",
     },
     {
       alt: "Image 4 description",
       src: image4,
-      style: "object-fit: cover; width: 100%; height: 100%;"
+      style: "object-fit: cover; width: 100%; height: 100%;",
     },
   ];
 
@@ -32,7 +32,7 @@
   let forward = true;
 </script>
 
-<section id="aboutme" class="about-section">
+<section id="aboutme">
   <h1>About Me</h1>
   <div class="about-content">
     <div class="max-w-md space-y-4">
@@ -48,17 +48,16 @@
       commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
       velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum. <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat.
+      est laborum. <br />Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt.
     </p>
   </div>
 </section>
 
 <style>
-  .about-section {
-    padding: 50px 20px;
+  section {
+    box-sizing: border-box;
+    padding: 40px 20px;
     text-align: center;
     justify-content: center;
     color: white;
@@ -75,7 +74,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 50px;
   }
   p {

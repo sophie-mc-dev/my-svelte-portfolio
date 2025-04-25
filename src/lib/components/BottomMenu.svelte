@@ -40,6 +40,9 @@
     height: 150px;
     background: white;
   }
+  .menu-line:hover {
+    background: #e9d8c7;
+  }
 
   .social-icons {
     display: flex;
@@ -58,6 +61,7 @@
 
   .social-icon:hover {
     transform: scale(1.1);
+    color: #e9d8c7;
   }
 
   @media (max-width: 768px) {

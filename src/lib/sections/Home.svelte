@@ -58,8 +58,7 @@
   }
 
   .btn:hover {
-    background-color: #dd1212;
-    color: white;
+    background-color: #e9d8c7;
     transform: scale(1.05);
   }
 

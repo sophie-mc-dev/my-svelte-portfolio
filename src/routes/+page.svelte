@@ -47,7 +47,6 @@
 
   .content > :global(section) {
       width: 100%;
-      margin-bottom: 100px;
   }
 
   @media (max-width: 768px) {
@@ -58,8 +57,8 @@
       }
 
       .content > :global(section) {
-          height: auto;
-          padding: 20px 0; 
+          height: 100vh;
+          padding: 20px; 
           margin-bottom: 20px;
       }
   }

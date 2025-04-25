@@ -45,6 +45,10 @@
     margin-bottom: 20px;
   }
 
+  .menu-line:hover {
+    background: #e9d8c7;
+  }
+
   .menu-icons {
     display: flex;
     flex-direction: column;
@@ -62,6 +66,7 @@
 
   .menu-icon:hover {
     transform: scale(1.1);
+    color: #e9d8c7;
   }
 
   @media (max-width: 768px) {
