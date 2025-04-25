@@ -64,7 +64,6 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    height: 100vh;
   }
   h1 {
     font-size: 36px;
@@ -84,9 +83,19 @@
     line-height: 3em;
   }
 
+  @media (min-width: 1024px) {
+    section {
+      height: 100vh;
+    }
+  }
+
   @media (max-width: 768px) {
+    section {
+      padding: 40px 12px;
+    }
     .about-content {
       flex-direction: column-reverse;
+      flex-wrap: wrap;
       gap: 30px;
     }
 

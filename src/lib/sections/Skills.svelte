@@ -3,7 +3,7 @@
   import { skills } from "../data/skillsData.js";
 </script>
 
-<section id="skills">
+<section id="skills" class="skills-section">
   <h1>Skill-Set</h1>
 
   <div class="card-wrapper">
@@ -16,34 +16,82 @@
 </section>
 
 <style>
-  section {
-    min-height: 100vh;
-    box-sizing: border-box;
-    padding: 50px 20px;
-    text-align: center;
-    justify-content: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .card-wrapper {
-    width: 100%;
-    max-width: 1000px; 
-    margin: 0 auto; 
-    box-sizing: border-box;
-    padding: 0 20px; 
-  }
+  .skills-section {
+  min-height: auto;
+  box-sizing: border-box;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  scroll-margin-top: 80px; 
+}
+
+.card-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.skills-content {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+/* 1024px and below (large tablets/laptops) */
+@media (max-width: 1024px) {
   h1 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 32px;
   }
+
   .skills-content {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    width: 100%;
+    gap: 30px;
   }
+
+  section {
+    padding: 50px 16px;
+  }
+}
+
+/* 768px and below (tablets) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .skills-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skills-section {
+    padding: 40px 12px;
+  }
+}
+
+/* 480px and below (phones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .skills-section {
+    padding: 30px 10px;
+    gap: 30px;
+  }
+}
+
 </style>
