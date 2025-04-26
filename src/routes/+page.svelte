@@ -44,11 +44,12 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        gap: 100px;
     }
   
     .content > :global(section) {
         width: 100%;
-        margin-bottom: 80px; 
+        margin-bottom: 100px; 
     }
   
     /* For medium screens (tablets) */

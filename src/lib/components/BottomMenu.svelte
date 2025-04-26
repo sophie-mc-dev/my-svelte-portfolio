@@ -64,7 +64,7 @@
     color: #e9d8c7;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .bottom-right-menu {
       bottom: 0;
       left: 0;

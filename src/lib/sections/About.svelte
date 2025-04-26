@@ -32,7 +32,7 @@
   let forward = true;
 </script>
 
-<section id="aboutme">
+<section id="aboutme" class="about-section">
   <h1>About Me</h1>
   <div class="about-content">
     <div class="max-w-md space-y-4">
@@ -55,19 +55,20 @@
 </section>
 
 <style>
-  section {
+  .about-section {
+    min-height: 100vh;
     box-sizing: border-box;
-    padding: 40px 20px;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: white;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    scroll-margin-top: 80px;
   }
   h1 {
     font-size: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .about-content {
     display: flex;
@@ -83,30 +84,23 @@
     line-height: 3em;
   }
 
-  @media (min-width: 1024px) {
-    section {
+  @media (max-width: 1050px) {
+    .about-section {
       height: 100vh;
-    }
-  }
-
-  @media (max-width: 768px) {
-    section {
-      padding: 40px 12px;
     }
     .about-content {
       flex-direction: column-reverse;
       flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       gap: 30px;
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
     }
-
-    h1 {
-      font-size: 28px;
-    }
-
     p {
-      font-size: 14px;
-      line-height: 2em;
       text-align: center;
     }
   }
+
 </style>

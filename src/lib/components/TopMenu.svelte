@@ -69,7 +69,7 @@
     color: #e9d8c7;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .menu {
       position: fixed;
       display: flex;

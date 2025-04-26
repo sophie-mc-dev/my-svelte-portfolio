@@ -24,10 +24,10 @@
 
 <style>
   .projects-section {
-    min-height: auto;
+    min-height: 100vh;
     box-sizing: border-box;
-    padding: 60px 20px;
     text-align: center;
+    justify-content: flex-start;
     color: white;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@
 
   h1 {
     font-size: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   .projects-content {
@@ -58,17 +58,15 @@
   }
 
   /* 1024px and below (large tablets/laptops) */
-  @media (max-width: 1024px) {
+  @media (max-width: 1100px) {
     h1 {
       font-size: 32px;
     }
 
-    .projects-section {
-      padding: 50px 16px;
-    }
-
     .projects-content {
-      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
     }
   }
 
@@ -82,10 +80,6 @@
       flex-direction: column;
       align-items: center;
       gap: 24px;
-    }
-
-    .projects-section {
-      padding: 40px 12px;
     }
   }
 

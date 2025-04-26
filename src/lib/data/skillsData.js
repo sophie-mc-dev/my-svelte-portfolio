@@ -10,13 +10,13 @@ export const skills = [
     icon: FluentMdl2Code,
     title: "Programming Languages",
     description: "Knowledge in programming languages used for backend software development.",
-    designation: ["Java", "JavaScript", "SQL", "R", "Python"],
+    designation: ["Java", "JavaScript", "SQL", "C"],
   },
   {
     icon: HugeiconsWebDesign02,
     title: "Web Development",
     description: "Skills related to building and maintaining web applications.",
-    designation: ["HTML", "CSS", "Less/Scss", "TailwindCSS", "ReactJS", "Svelte"],
+    designation: ["HTML", "CSS", "Less/Scss", "TailwindCSS", "React.JS", "Svelte", "Node.JS"],
   },
   {
     icon: MdiDatabaseEdit,

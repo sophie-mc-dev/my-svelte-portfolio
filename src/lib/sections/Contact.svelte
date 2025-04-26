@@ -32,13 +32,12 @@
   .contacts-section {
     min-height: 100vh;
     box-sizing: border-box;
-    padding: 50px 20px;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
     scroll-margin-top: 80px;
   }
 
