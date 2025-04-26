@@ -1,6 +1,6 @@
 <script>
   import Blob from "../components/Blob.svelte";
-  let cvPath = "/assets/sample.pdf";
+  let cvPath = "/assets/Sofia_Merino_Costa_CV (2025).pdf";
 </script>
 
 <section id="home" class="home-section">
