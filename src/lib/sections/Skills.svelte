@@ -30,7 +30,7 @@
 
   .card-wrapper {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 20px;

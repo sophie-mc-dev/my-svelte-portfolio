@@ -2,12 +2,37 @@
   let name = "";
   let email = "";
   let message = "";
+  let success = false;
+  let error = false;
 
-  const handleSubmit = (e) => {
+  async function handleSubmit(e) {
     e.preventDefault();
-    const mailtoLink = `mailto:me@sophie-mc.dev?subject=Message from ${name}&body=${encodeURIComponent(message)}%0A%0AFrom: ${name} (${email})`;
-    window.location.href = mailtoLink;
-  };
+
+    const formData = new FormData();
+    formData.append("access_key", "194eadbb-3417-4047-a81d-7d9c23f92e89");
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        success = true;
+        name = "";
+        email = "";
+        message = "";
+      } else {
+        error = true;
+      }
+    } catch (err) {
+      error = true;
+    }
+  }
 </script>
 
 <section id="contactme" class="contacts-section">
@@ -20,12 +45,35 @@
     > or just drop a message below.
   </p>
   <form class="contact-form" on:submit|preventDefault={handleSubmit}>
-    <input type="text" placeholder="Your Name" bind:value={name} required />
-    <input type="email" placeholder="Your Email" bind:value={email} required />
-    <textarea placeholder="Your Message" bind:value={message} required
+    <input
+      type="text"
+      placeholder="Your Name"
+      bind:value={name}
+      required
+      name="name"
+    />
+    <input
+      type="email"
+      placeholder="Your Email"
+      bind:value={email}
+      required
+      name="email"
+    />
+    <textarea
+      placeholder="Your Message"
+      bind:value={message}
+      required
+      name="message"
     ></textarea>
     <button type="submit">Send Message</button>
   </form>
+
+  {#if success}
+    <p class="success-message">Thank you! Your message has been sent.</p>
+  {/if}
+  {#if error}
+    <p class="error-message">Oops! Something went wrong. Please try again.</p>
+  {/if}
 </section>
 
 <style>

@@ -9,7 +9,7 @@
     export let liveUrl: string;
   </script>
   
-  <Card class="max-w-s h-[400px] bg-gray-800 p-0 rounded-lg text-left card-wrapper flex flex-col justify-between transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
+  <Card class="max-w-s h-[400px] bg-gray-800 p-5 rounded-lg text-left card-wrapper flex flex-col justify-between transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
     <img src={image} alt="{title} screenshot" class="w-full h-48 object-cover" />
     
     <div class="flex flex-col gap-3">

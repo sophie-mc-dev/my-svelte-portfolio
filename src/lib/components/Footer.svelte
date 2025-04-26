@@ -4,7 +4,7 @@
 </script>
 
 <Footer class="absolute bottom-0 left-0 z-20 w-full p-4 shadow">
-  <div class="flex flex-col items-center justify-center">
+  <div class="flex flex-col items-center justify-center mb-6">
     <a href="#home">
       <img src={logo} alt="Logo" class="h-16 mb-3" />
     </a>

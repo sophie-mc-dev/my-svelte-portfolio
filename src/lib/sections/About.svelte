@@ -84,10 +84,7 @@
     line-height: 3em;
   }
 
-  @media (max-width: 1050px) {
-    .about-section {
-      height: 100vh;
-    }
+  @media (max-width: 1200px) {
     .about-content {
       flex-direction: column-reverse;
       flex-wrap: wrap;
@@ -103,4 +100,14 @@
     }
   }
 
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+      margin-top: 2rem;
+    }
+    p {
+      font-size: 12px; 
+      line-height: 2.5em;
+    }
+  }
 </style>
