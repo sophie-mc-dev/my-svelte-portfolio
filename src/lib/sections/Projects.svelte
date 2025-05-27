@@ -1,6 +1,6 @@
 <script>
   import ProjectsCard from "../components/ProjectsCard.svelte";
-  import { projects } from "../data/projects";
+  // import { projects } from "../data/projects";
 </script>
 
 <section id="projects" class="projects-section">
