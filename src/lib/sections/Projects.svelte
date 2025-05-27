@@ -1,23 +1,16 @@
 <script>
   import ProjectsCard from "../components/ProjectsCard.svelte";
-  import { projects } from "../data/projectsData.js";
+  import { projects } from "../data/projects";
 </script>
 
 <section id="projects" class="projects-section">
   <h1>My Projects</h1>
   <div class="card-wrapper">
     <div class="projects-content">
-      {#each projects as { image, title, techStack, tags, description, githubUrl, liveUrl }}
-        <ProjectsCard
-          {image}
-          {title}
-          {techStack}
-          {tags}
-          {description}
-          {githubUrl}
-          {liveUrl}
-        />
-      {/each}
+      <!-- {#each projects as project}
+        <ProjectsCard {project} />
+      {/each} -->
+      work in progress...
     </div>
   </div>
 </section>
