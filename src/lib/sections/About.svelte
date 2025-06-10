@@ -45,7 +45,7 @@
       <p>
         I have a bachelor's degree in Informatics Engineering and am currently
         finishing my master's in Informatics and Computer Engineering at <u
-          ><a href="https://www.up.pt/feup/pt/">FEUP</a></u
+          ><a target="_blank" href="https://www.up.pt/feup/en/">FEUP</a></u
         >. For my thesis, I'm developing an intelligent knowledge management
         system aimed at supporting engineering education. What excites me most
         is that it's not just a research project — it's a real product with the
