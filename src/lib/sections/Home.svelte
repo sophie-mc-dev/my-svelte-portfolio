@@ -6,7 +6,7 @@
 <section id="home" class="home-section">
   <div class="introduction">
     <h1>Hi 👋 I'm Sofia!</h1>
-    <p>I'm a FrontEnd Developer based in Porto.</p>
+    <p>I'm a Software Engineer based in Porto.</p>
     <a href={""} on:click={() => window.open(cvPath, "_blank")}>
       <button class="btn">Download CV</button>
     </a>
