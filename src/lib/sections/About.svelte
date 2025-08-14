@@ -43,25 +43,20 @@
     </div>
     <div class="text-content">
       <p>
-        I have a bachelor's degree in Informatics Engineering and am currently
-        finishing my master's in Informatics and Computer Engineering at <u
-          ><a target="_blank" href="https://www.up.pt/feup/en/">FEUP</a></u
-        >. For my thesis, I'm developing an intelligent knowledge management
-        system aimed at supporting engineering education. What excites me most
-        is that it's not just a research project — it's a real product with the
-        potential to help students and educators access knowledge more easily
-        and effectively. Creating something useful that can truly make a
-        difference is what drives me.
+        I recently completed my Master's in Informatics and Computer Engineering
+        at <u><a target="_blank" href="https://www.up.pt/feup/en/">FEUP</a></u>,
+        where I developed an intelligent knowledge management system to support
+        engineering education, as my thesis.
 
-        <br /><br />Frontend development is where I feel most at home. I love
-        designing clean, thoughtful interfaces that make the user experience
-        seamless. JavaScript still tests my patience sometimes, but each
-        challenge helps me grow stronger and more confident.
-
+        <br /><br />I'm passionate about creating thoughtful,
+        user-centered digital experiences — from clean visual design to
+        intuitive, easy-to-use interfaces. I enjoy turning ideas into useful
+        products that prioritize simplicity, usability, and real-world impact.
+        
         <br /><br />Outside of tech, I'm always exploring — whether it's
         discovering new places, diving into music from around the world, or
-        trying new sports. Lately, I've been practicing padel, it's a great way
-        to reset after a full day of screen time.
+        trying new sports. Lately, I've been enjoying padel, it's a great way
+        to reset after a full day of screen time. 
       </p>
     </div>
   </div>
