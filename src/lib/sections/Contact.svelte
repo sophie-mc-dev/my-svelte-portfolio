@@ -5,6 +5,9 @@
   let success = false;
   let error = false;
 
+  /**
+   * @param {{ preventDefault: () => void; }} e
+   */
   async function handleSubmit(e) {
     e.preventDefault();
 

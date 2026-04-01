@@ -43,15 +43,15 @@
     </div>
     <div class="text-content">
       <p>
-        I recently completed my Master's in Informatics and Computer Engineering
-        at <u><a target="_blank" href="https://www.up.pt/feup/en/">FEUP</a></u>,
+        I have a Masters in Informatics and Computer Engineering
+        from <u><a target="_blank" href="https://www.up.pt/feup/en/">FEUP</a></u>,
         where I developed an intelligent knowledge management system to support
         engineering education, as my thesis.
 
         <br /><br />I'm passionate about creating thoughtful,
-        user-centered digital experiences — from clean visual design to
-        intuitive, easy-to-use interfaces. I enjoy turning ideas into useful
-        products that prioritize simplicity, usability, and real-world impact.
+        user-centered digital experiences. Right now I'm exploring low-development with Outsystems, 
+        where I enjoy turning new functionalities into useful
+        interactions that prioritize simplicity, usability, and real-world impact.
         
         <br /><br />Outside of tech, I'm always exploring — whether it's
         discovering new places, diving into music from around the world, or

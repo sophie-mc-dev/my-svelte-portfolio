@@ -22,13 +22,13 @@ export const skills = [
     icon: MdiDatabaseEdit,
     title: "Databases",
     description: "Knowledge in designing, implementing, and managing databases.",
-    designation: ["PostgreSQL", "MongoDB", "Redis", "Couchbase", "Neo4j"],
+    designation: ["PostgreSQL", "MongoDB", "Couchbase", "Neo4j", "Oracle"],
   },
   {
     icon: IconoirAgile,
     title: "Development Practices",
     description: "Knowledge of tools and methodologies that help in automating and improving the software development process.",
-    designation: ["Docker", "Git", "Trello", "Jira", "Agile", "Scrum", "TDD"],
+    designation: ["Outsystems", "Docker", "Git", "Trello", "Jira", "Agile", "Scrum", "TDD"],
   },
   {
     icon: MdiDesign,
