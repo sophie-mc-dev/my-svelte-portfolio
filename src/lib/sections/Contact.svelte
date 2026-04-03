@@ -41,7 +41,7 @@
 <section id="contactme" class="contacts-section">
   <h1>Contact Me</h1>
   <p class="contact-text">
-    I’d love to hear from you! Contact me at <a
+    I’d love to hear from you! <br>Contact me at <a
       target="_blank"
       href="mailto:me@sophie-mc.dev"
       class="underline">me@sophie-mc.dev</a

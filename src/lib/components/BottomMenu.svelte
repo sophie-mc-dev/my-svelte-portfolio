@@ -11,88 +11,62 @@
   ];
 </script>
 
-<div class="menu bottom-right-menu">
-  <div class="social-icons">
+<div
+  class="
+    fixed flex flex-col items-center
+    bottom-0 right-[100px]
+
+    max-[900px]:left-0
+    max-[900px]:right-0
+    max-[900px]:w-full
+    max-[900px]:flex-row
+    max-[900px]:justify-end
+    max-[900px]:items-center
+    max-[900px]:bg-[rgba(0,5,21,0.5)]
+    max-[900px]:backdrop-blur-md
+    max-[900px]:px-3
+    max-[900px]:py-2
+  "
+>
+  <!-- Icons -->
+  <div
+    class="
+      flex flex-col items-center
+
+      max-[900px]:flex-row
+    "
+  >
     {#each socialIcons as socialIcon}
-      <a target="_blank" href={socialIcon.href} class="social-icon">
+      <a
+        target="_blank"
+        href={socialIcon.href}
+        class="
+          block text-white no-underline
+          my-[10px] text-[24px]
+          transition-all duration-200 ease-in-out
+          hover:scale-110 hover:text-[#e9d8c7]
+
+          max-[900px]:my-0
+          max-[900px]:mx-[5px]
+          max-[900px]:text-[20px]
+        "
+      >
         <svelte:component this={socialIcon.component} />
       </a>
     {/each}
   </div>
-  <div class="menu-line"></div>
+
+  <!-- Line -->
+  <div
+    class="
+      bg-white transition-colors
+      w-[2px] h-[150px]
+
+      hover:bg-[#e9d8c7]
+
+      max-[900px]:w-[40px]
+      max-[900px]:h-[2px]
+      max-[900px]:ml-[10px]
+    "
+  ></div>
 </div>
-
-<style>
-  .menu {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .bottom-right-menu {
-    bottom: 0;
-    right: 100px;
-  }
-
-  .menu-line {
-    width: 2px;
-    height: 150px;
-    background: white;
-  }
-  .menu-line:hover {
-    background: #e9d8c7;
-  }
-
-  .social-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-icon {
-    display: block;
-    margin: 10px 0;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-  }
-
-  .social-icon:hover {
-    transform: scale(1.1);
-    color: #e9d8c7;
-  }
-
-  @media (max-width: 900px) {
-    .bottom-right-menu {
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      background: rgba(0, 5, 21, 0.5); 
-      backdrop-filter: blur(8px); 
-      padding: 8px 12px;
-      box-sizing: border-box;
-      flex-direction: row;
-    }
-
-    .menu-line {
-      height: 2px;
-      width: 40px;
-      margin-bottom: 0;
-      margin-left: 10px;
-    }
-
-    .social-icons {
-      flex-direction: row; 
-    }
-
-    .social-icon {
-      margin: 0 5px;
-      font-size: 20px; 
-    }
-  }
-</style>

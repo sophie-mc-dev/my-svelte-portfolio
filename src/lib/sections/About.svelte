@@ -6,178 +6,83 @@
   import image4 from "../images/profile/image4.jpeg";
 
   const images = [
-    {
-      alt: "Image 1 description",
-      src: image1,
-      style: "object-fit: cover; width: 100%; height: 100%;",
-    },
-    {
-      alt: "Image 2 description",
-      src: image2,
-      style: "object-fit: cover; width: 100%; height: 100%;",
-    },
-    {
-      alt: "Image 3 description",
-      src: image3,
-      style: "object-fit: cover; width: 100%; height: 100%;",
-    },
-    {
-      alt: "Image 4 description",
-      src: image4,
-      style: "object-fit: cover; width: 100%; height: 100%;",
-    },
+    { alt: "Image 1 description", src: image1 },
+    { alt: "Image 2 description", src: image2 },
+    { alt: "Image 3 description", src: image3 },
+    { alt: "Image 4 description", src: image4 },
   ];
 
   let index = 0;
   let forward = true;
 </script>
 
-<section id="aboutme" class="about-section">
-  <h1>About Me</h1>
-  <div class="about-content">
-    <div class="carousel-container">
+<section
+  id="aboutme"
+  class="min-h-screen flex flex-col items-center text-white gap-10 px-5 scroll-mt-20"
+>
+  <h1 class="text-3xl md:text-4xl mt-8 md:mt-0">About Me</h1>
+
+  <div
+    class="w-full max-w-[980px] mx-auto 
+           flex flex-col items-center gap-8
+           xl:block"
+  >
+    <!-- Carousel -->
+    <div
+      class="
+        flex flex-col gap-4
+        w-full max-w-[300px]
+        md:max-w-[384px]
+        xl:float-left xl:mr-[50px] xl:mb-5 xl:w-[384px]
+        lg:mr-[30px] lg:w-[320px]
+      "
+    >
       <Carousel {images} {forward} let:Controls bind:index>
         <Controls />
       </Carousel>
       <Thumbnails {images} {forward} bind:index />
     </div>
-    <div class="text-content">
-      <p>
+
+    <!-- Text -->
+    <div
+      class="
+        w-full
+        text-center xl:text-left
+      "
+    >
+      <p
+        class="
+          text-xs sm:text-sm md:text-base
+          leading-[1.5] md:leading-[1.6] lg:leading-[1.8]
+          max-w-full xl:max-w-none
+          mx-auto xl:mx-0
+          text-center xl:text-justify
+        "
+      >
         I have a Masters in Informatics and Computer Engineering
-        from <u><a target="_blank" href="https://www.up.pt/feup/en/">FEUP</a></u>,
+        from
+        <a
+          target="_blank"
+          href="https://www.up.pt/feup/en/"
+          class="underline font-bold text-brand-beige hover:text-white transition-colors"
+        >
+          FEUP
+        </a>,
         where I developed an intelligent knowledge management system to support
         engineering education, as my thesis.
 
-        <br /><br />I'm passionate about creating thoughtful,
-        user-centered digital experiences. Right now I'm exploring low-development with Outsystems, 
+        <br /><br />
+        I'm passionate about creating thoughtful,
+        user-centered digital experiences. Right now I'm exploring low-development with Outsystems,
         where I enjoy turning new functionalities into useful
         interactions that prioritize simplicity, usability, and real-world impact.
-        
-        <br /><br />Outside of tech, I'm always exploring — whether it's
+
+        <br /><br />
+        Outside of tech, I'm always exploring — whether it's
         discovering new places, diving into music from around the world, or
         trying new sports. Lately, I've been enjoying padel, it's a great way
-        to reset after a full day of screen time. 
+        to reset after a full day of screen time.
       </p>
     </div>
   </div>
 </section>
-
-<style>
-  .about-section {
-    min-height: 100vh;
-    box-sizing: border-box;
-    text-align: center;
-    justify-content: flex-start;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    scroll-margin-top: 80px;
-    padding: 0 20px;
-  }
-
-  h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-
-  .about-content {
-    max-width: 980px;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-  }
-
-  .carousel-container {
-    float: left;
-    width: 384px;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    shape-outside: margin-box;
-  }
-
-  .text-content {
-    overflow: hidden;
-    text-align: left;
-  }
-
-  .text-content p {
-    font-size: 16px;
-    line-height: 1.8em;
-    margin: 0;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  /* Responsive breakpoints */
-  @media (max-width: 1200px) {
-    .about-content {
-      padding: 0 10px;
-    }
-
-    .carousel-container {
-      width: 320px;
-      margin-right: 30px;
-    }
-  }
-
-  @media (max-width: 1350px) {
-    .about-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .carousel-container {
-      float: none;
-      width: 100%;
-      max-width: 384px;
-      margin-right: 0;
-      margin-bottom: 0;
-    }
-
-    .text-content {
-      overflow: visible;
-      text-align: center;
-      width: 100%;
-    }
-
-    .text-content p {
-      text-align: center;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-  }
-
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 24px;
-      margin-top: 2rem;
-    }
-
-    .text-content p {
-      font-size: 14px;
-      line-height: 1.6em;
-      max-width: 100%;
-    }
-
-    .carousel-container {
-      max-width: 300px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .about-section {
-      padding: 0 15px;
-    }
-
-    .text-content p {
-      font-size: 12px;
-      line-height: 1.5em;
-    }
-  }
-</style>

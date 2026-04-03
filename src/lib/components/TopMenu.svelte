@@ -14,98 +14,62 @@
   ];
 </script>
 
-<div class="menu top-left-menu">
-  <div class="menu-line"></div>
-  <div class="menu-icons">
+<div
+  class="
+    fixed flex items-center flex-col
+    top-0 left-[100px]
+    
+    max-[900px]:left-0
+    max-[900px]:w-full
+    max-[900px]:flex-row
+    max-[900px]:justify-start
+    max-[900px]:bg-[rgba(0,5,21,0.5)]
+    max-[900px]:backdrop-blur-md
+    max-[900px]:px-3
+    max-[900px]:py-2
+    max-[900px]:z-[100]
+  "
+>
+  <!-- Line -->
+  <div
+    class="
+    bg-white transition-colors
+    w-[2px] h-[100px] mb-5
+    
+    hover:bg-[#e9d8c7]
+
+    max-[900px]:w-[40px]
+    max-[900px]:h-[2px]
+    max-[900px]:mb-0
+    max-[900px]:mr-[10px]
+  "
+  ></div>
+
+  <!-- Icons -->
+  <div
+    class="
+      flex flex-col items-center
+      
+      max-[900px]:flex-row
+    "
+  >
     {#each icons as icon}
-      <a href={icon.href} class="menu-icon" title={icon.title}>
+      <a
+        href={icon.href}
+        title={icon.title}
+        class="
+          block text-white no-underline
+          my-[10px] text-[24px]
+          transition-all duration-200 ease-in-out
+          hover:scale-110 hover:text-[#e9d8c7]
+
+          max-[900px]:my-0
+          max-[900px]:mx-[8px]
+          max-[900px]:text-[20px]
+        "
+      >
         <svelte:component this={icon.component} />
       </a>
     {/each}
   </div>
 </div>
-
-<style>
-  .menu {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .top-left-menu {
-    top: 0;
-    left: 100px;
-  }
-
-  .menu-line {
-    width: 2px;
-    height: 100px;
-    background: white;
-    margin-bottom: 20px;
-  }
-
-  .menu-line:hover {
-    background: #e9d8c7;
-  }
-
-  .menu-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu-icon {
-    display: block;
-    margin: 10px 0;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-  }
-
-  .menu-icon:hover {
-    transform: scale(1.1);
-    color: #e9d8c7;
-  }
-
-  @media (max-width: 900px) {
-    .menu {
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      z-index: 100;
-    }
-
-    .top-left-menu {
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      background: rgba(0, 5, 21, 0.5);
-      backdrop-filter: blur(8px);
-      padding: 8px 12px;
-      box-sizing: border-box;
-      flex-direction: row;
-    }
-
-    .menu-line {
-      height: 2px;
-      width: 40px;
-      margin-bottom: 0;
-      margin-right: 10px;
-    }
-
-    .menu-icons {
-      flex-direction: row;
-    }
-
-    .menu-icon {
-      margin: 0 8px;
-      font-size: 20px;
-    }
-  }
-</style>
